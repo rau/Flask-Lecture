@@ -3,10 +3,18 @@
 <title>Basic Webpage</title>
 </head>
 <body>
-
 <p> Lorem ipsum dot. </p>
-
-
-
+<p>
+{% for name in names %}
+{{name}}
+{% endfor %}
+</p>
+<form method="POST" action="/">
+	<input type="text" name="zip">
+	<p>Enter your zip code.</p>
+	<br></br>
+	<input class="btn btn-primary" type="submit" value="submit">
+</form>
+<p>{{information}}</p>
 </body>
 </html>
